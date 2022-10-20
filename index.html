@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,28 @@
     <title>TV Remote control</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <video src="assets/videos/Jellyfish video - kevin"></video>
+    <video src=""></video>
     <button>on/off</button>
+
+<script>
+    let isPowerOn = false;
+    let powerBtn = document.querySelector('button');
+    let video = document.querySelector('video');
+    console.log(powerBtn);
+
+    powerBtn.addEventListener('click', powerOn);
+
+    function powerOn() {
+        console.log('powerBtn was clicked');
+        video.setAttribute('src', 'assets/videos/Jellyfish video - kevin');
+        video.play();
+    }
+
+
+
+</script>
 </body>
+
 </html>
